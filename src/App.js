@@ -12,33 +12,28 @@ import Login from './screens/Login/Login';
 import NewYearStack from './components/NewYearStack/NewYearStack.js';
 import ReviewStack from './components/ReviewStack/ReviewStack.js';
 import Earth from './components/Earth/Earth.js';
+import Destinations from './screens/Destinations/Destinations.js';
 
 
 
 function App() {
   return (
-    <div>
-      <NewYearStack/>
-      <Earth />
-    </div>
-    
-  )
-  //   <Router>
-  //     <div>
-  //       <NavBar className="navBar"/>
-  //       <Routes>
-  //         <Route exact path="/" element={<Home/>} />
-  //         <Route path="/about" element={<About/>} />
-  //         <Route path="/contact" element={<Contact/>} />
-  //         <Route path="/login" element={<Login />} />
-  //         <Route path="/register" element={<Register />} />
-  //         <Route path="/our-travelers" element={<OurTravelers />} />
-  //         <Route path="/destination-details" element={<DestinationDetails />} />
-  //       </Routes>
+    <Router>
+      <div>
+        <NavBar className="navBar"/>
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/destinations" element={<Destinations />} />
+          {/* <Route path="/destination-details" element={<DestinationDetails />} /> */}
+        </Routes>
         
-  //     </div>
-  //   </Router>
-  // );
+      </div>
+    </Router>
+  );
 }
 
 export default App;

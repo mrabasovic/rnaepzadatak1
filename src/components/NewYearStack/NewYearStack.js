@@ -26,23 +26,21 @@ const NewYearStack = () => {
     <div className="newYearCard-stack-container">
       {destinationsData.slice(startIndex, startIndex + visibleCards).map((card) => (
         // TODO sredi da ne vodi na /destination nego negde drugo, a mozda i treba tu?. TODO NAPRAVI LEPO NAVIGACIJU DA NE IZBACUJE ONAJ ERROR
-          // <Link key={card.id} to={`/destination-details/${card.id}`} className="newYearCard-link"> 
+          <Link key={card.id} to={`/destination-details/${card.id}`} className="newYearCard-link"> 
               <HorizontalCard
                   imageUrl={card.imageUrl}
                   title={card.title}
                   dates={card.dates}
                   price={card.price}
               />
+            </Link>
           
       ))}
-      {/* <div>
-        {startIndex > 0 && <button onClick={navigatePrev}>Previous</button>}
-        {startIndex + visibleCards < destinationsData.length && <button onClick={navigateNext}>Next</button>}
-      </div> */}
-      {/* TODO mozda i ovde ne treba da vodi na our-travelers vidi to*/}
-      {/* <Link to="/our-travelers">
-        <button>Show All</button>
-      </Link> */}
+      <div className="centeredButtonContainer">
+        <Link to="/destinations">
+          <button className="seeAllBtn">See All</button>
+        </Link>
+      </div>
     </div>
   );
 };

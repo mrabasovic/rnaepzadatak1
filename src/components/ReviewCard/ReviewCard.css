@@ -5,6 +5,7 @@
     padding: 16px;
     margin-bottom: 16px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 500px;
   }
   
   .review-header {

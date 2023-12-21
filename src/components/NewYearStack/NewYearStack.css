@@ -4,6 +4,8 @@
   margin: 0 auto; /* Center the container */
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .newYearCard-link {
@@ -15,6 +17,21 @@
 
 .newYearCard-link:hover {
   text-decoration: underline;
+}
+
+.centeredButtonContainer {
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+.seeAllBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #475f89;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
   

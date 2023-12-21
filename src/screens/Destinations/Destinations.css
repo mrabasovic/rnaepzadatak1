@@ -1,0 +1,19 @@
+.destinations-stack-container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .destinations-link {
+    width: 100%;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .destinations-link:hover {
+    text-decoration: underline;
+  } 
