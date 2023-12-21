@@ -72,7 +72,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-section">
-        <h2>Location</h2>
+        <h2 className="locationHeading2">Location</h2>
         {mapImageUrl && <img src={mapImageUrl} alt="Map with marker" />}
       </div>
     </div>

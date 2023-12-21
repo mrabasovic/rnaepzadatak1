@@ -1,0 +1,24 @@
+.review-card {
+    border: 3px solid #9BBEC8;
+    /* border-width: 3px; */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grade {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .review-content {
+    margin-top: 12px;
+  }
+  
