@@ -8,7 +8,7 @@ const NavBar = () => {
 	return (
 		<>
 			<nav className="Nav">
-				<FaBars className="Bars" />
+				{/* <FaBars className="Bars" />
 				<div className="NavMenu">
 					<img className="LogoImage" src={LogoImagePath} alt="Logo" height={'150px'} width={'150px'}/>
 					<Link to="/" className="NavLink">
@@ -28,7 +28,7 @@ const NavBar = () => {
 					<Link to="/register" className="NavBtnLink">
 						Sign Up
 					</Link>
-				</div>
+				</div> */}
 			</nav>
 		</>
 	);

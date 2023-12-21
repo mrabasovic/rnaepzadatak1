@@ -1,0 +1,58 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login {
+    background-color: #164863;
+    color: #ffffff;
+  }
+  
+  .register {
+    background-color: #164863;
+    color: #ffffff;
+  }
+  
+  h2 {
+    color: #164863;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #164863;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #164863;
+    text-decoration: underline;
+  }
+  
+  /* You can customize these styles further based on your preferences */
+  

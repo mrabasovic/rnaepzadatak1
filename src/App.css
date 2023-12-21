@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.signInButton {
+  color: #ffffff; /* Replace with your desired text color code or name */
+
+  /* Add any other styles you want */
+  /* For example, you might want to add padding, border, etc. */
+  padding: 10px;
+  border-color: blue;
+  border-radius: 10px;
+}
+
+.signUpButton {
+  color: #ffffff; /* Replace with your desired text color code or name */
+
+  /* Add any other styles you want */
+  /* For example, you might want to add padding, border, etc. */
+  padding: 10px;
+  border-color: blue;
+  border-radius: 10px;
+}
