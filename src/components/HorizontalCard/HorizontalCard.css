@@ -1,0 +1,66 @@
+/* HorizontalCard.css */
+
+.horizontal-card {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.horizontal-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-card-image {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  flex: 1;
+}
+
+.horizontal-card-title,
+.horizontal-card-description,
+.horizontal-card-dates,
+.horizontal-card-price {
+  margin-bottom: 8px;
+}
+
+.horizontal-card-title {
+  font-size: 1.5rem;
+}
+
+.horizontal-card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.horizontal-card-dates,
+.horizontal-card-price {
+  font-size: 1rem;
+  color: #888;
+  margin-top: auto; /* Pushes these elements to the bottom of the container */
+}
+
+@media (min-width: 768px) {
+  .horizontal-card {
+    flex-direction: row;
+  }
+
+  .horizontal-card-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .horizontal-card-image {
+    margin-right: 16px;
+  }
+}
