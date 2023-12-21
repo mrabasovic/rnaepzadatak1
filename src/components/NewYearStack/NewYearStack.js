@@ -25,15 +25,15 @@ const NewYearStack = () => {
   return (
     <div className="newYearCard-stack-container">
       {destinationsData.slice(startIndex, startIndex + visibleCards).map((card) => (
-        // TODO sredi da ne vodi na /destination nego negde drugo, a mozda i treba tu?
-          <Link key={card.id} to={`/destination-details/${card.id}`} className="newYearCard-link"> 
+        // TODO sredi da ne vodi na /destination nego negde drugo, a mozda i treba tu?. TODO NAPRAVI LEPO NAVIGACIJU DA NE IZBACUJE ONAJ ERROR
+          // <Link key={card.id} to={`/destination-details/${card.id}`} className="newYearCard-link"> 
               <HorizontalCard
                   imageUrl={card.imageUrl}
                   title={card.title}
                   dates={card.dates}
                   price={card.price}
               />
-          </Link>
+          
       ))}
       {/* <div>
         {startIndex > 0 && <button onClick={navigatePrev}>Previous</button>}

@@ -9,12 +9,19 @@ import NavBar from './components/NavBar';
 // import OurTravelers from './screens/OurTravelers';
 import DestinationDetails from './screens/DestinationDetails';
 import Login from './screens/Login/Login';
+import NewYearStack from './components/NewYearStack/NewYearStack.js';
+import ReviewStack from './components/ReviewStack/ReviewStack.js';
+import Earth from './components/Earth/Earth.js';
 
 
 
 function App() {
   return (
-    <Home />
+    <div>
+      <NewYearStack/>
+      <Earth />
+    </div>
+    
   )
   //   <Router>
   //     <div>

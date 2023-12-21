@@ -1,6 +1,15 @@
 .review-stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; /* Adjust the gap as needed */
+  row-gap: 30px;
+  /* column-gap: -150px; */
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.headingReview {
+  padding-bottom: 15px;
+  text-align: center;
+}

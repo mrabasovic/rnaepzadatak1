@@ -11,11 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color:#92a3a7;
   }
   
   .grade {
     font-weight: bold;
-    color: #333;
+    color: #5e7379;
   }
   
   .review-content {
