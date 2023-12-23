@@ -28,6 +28,7 @@ const NewYearStack = () => {
         // TODO sredi da ne vodi na /destination nego negde drugo, a mozda i treba tu?. TODO NAPRAVI LEPO NAVIGACIJU DA NE IZBACUJE ONAJ ERROR
           <Link key={card.id} to={`/destination-details/${card.id}`} className="newYearCard-link"> 
               <HorizontalCard
+                  id={card.id}
                   imageUrl={card.imageUrl}
                   title={card.title}
                   dates={card.dates}

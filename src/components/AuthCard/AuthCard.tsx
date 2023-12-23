@@ -36,84 +36,70 @@ const AuthCard: React.FC<CardProps> = ({ type, onSubmit }) => {
       <form onSubmit={handleSubmit}>
         {isLogin ? (
           <>
-            <label>
-              Email:
               <input
                 type="email"
                 name="email"
+                placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
-            </label>
             <br />
-            <label>
-              Password:
               <input
                 type="password"
                 name="password"
+                placeholder="Password"
                 value={formData.password}
                 onChange={handleChange}
                 required
               />
-            </label>
           </>
         ) : (
           <>
-            <label>
-              First Name:
               <input
                 type="text"
                 name="firstName"
+                placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleChange}
                 required
               />
-            </label>
             <br />
-            <label>
-              Last Name:
               <input
                 type="text"
                 name="lastName"
+                placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
                 required
               />
-            </label>
             <br />
-            <label>
-              Email:
               <input
                 type="email"
                 name="email"
+                placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
-            </label>
             <br />
-            <label>
-              Password:
               <input
                 type="password"
                 name="password"
+                placeholder="Password"
                 value={formData.password}
                 onChange={handleChange}
                 required
               />
-            </label>
             <br />
-            <label>
-              Confirm Password:
               <input
                 type="password"
                 name="confirmPassword"
+                placeholder="Confirm Password"
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 required
               />
-            </label>
           </>
         )}
         <br />

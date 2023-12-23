@@ -97,3 +97,10 @@ a {
     width: 100%;
     height: auto;
   }
+
+  .photo-stack {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    text-align: center; /* Center text inside */
+  }

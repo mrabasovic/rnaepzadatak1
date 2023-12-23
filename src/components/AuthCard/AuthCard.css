@@ -1,29 +1,35 @@
 .card {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
   padding: 20px;
   width: 350px;
   text-align: center;
   font-family: 'Arial', sans-serif;
   top: -10%;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
 }
 
-.login {
-  background-color: #164863;
+.login, .register, .toggle-btn {
+  background-color: #f4f4f4;
   color: #ffffff;
-}
-
-.register {
-  background-color: #164863;
-  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+  padding: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -52,15 +58,10 @@ button {
   padding: 10px;
   border: none;
   cursor: pointer;
-}
-
-.toggle-btn {
-  margin-top: 10px;
-  cursor: pointer;
-  color: #164863;
-  text-decoration: underline;
-}
-
-.loginRegisterBtn {
   border-radius: 8px;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #0d324e; /* Darker shade on hover */
 }

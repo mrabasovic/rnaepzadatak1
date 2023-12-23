@@ -1,9 +1,7 @@
-/* HorizontalCard.css */
-
 .horizontal-card {
   display: flex;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
@@ -49,7 +47,8 @@
 .horizontal-card-price {
   font-size: 1rem;
   color: #888;
-  margin-top: auto; /* Pushes these elements to the bottom of the container */
+  margin-bottom: 8px;
+  /* margin-top: auto; Pushes these elements to the bottom of the container */
 }
 
 @media (min-width: 768px) {

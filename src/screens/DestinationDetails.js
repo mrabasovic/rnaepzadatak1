@@ -1,16 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import fetchCountryDetails from '../api/CountryApi';
+import destinationsData from '../data/destinationsData';
+import { useParams } from 'react-router-dom';
 
-const DestinationDetails = ({ countryName }) => {
+const findDestinationById = (id) => {
+  console.log("ovo je id: "+id);
+  const foundCountry = destinationsData.find(destination => destination.id === parseInt(id, 10));
+  return foundCountry ? foundCountry.country : null;
+};
+
+const DestinationDetails = () => {
+  const { id } = useParams();
+  console.log("id u dest det  "+id);
   const [countryDetails, setCountryDetails] = useState(null);
+  const country = findDestinationById(id);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // TODO OBRISI OVU LINIJU ISPOD I NEK SE SALJE prosledjen country name
-        countryName = "spain";
-        const data = await fetchCountryDetails(countryName);
-        setCountryDetails(data);
+        if(country) {
+          console.log("Ogo je drzava: "+country);
+          const data = await fetchCountryDetails(country);
+          setCountryDetails(data);
+        }
       } catch (error) {
         // Handle error, e.g., display an error message
         console.error("Error:", error);
@@ -18,7 +30,7 @@ const DestinationDetails = ({ countryName }) => {
     };
 
     fetchData();
-  }, [countryName]);
+  }, [country]);
 
   if (!countryDetails) {
     return <div>Loading...</div>;

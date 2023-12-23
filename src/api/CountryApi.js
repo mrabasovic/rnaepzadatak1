@@ -8,7 +8,7 @@ const fetchCountryDetails = async (countryName) => {
     }
 
     const data = await response.json();
-    return data[0]; // Assuming the API returns an array with a single country object
+    return data[0];
   } catch (error) {
     console.error("Error fetching country details:", error);
     throw error;

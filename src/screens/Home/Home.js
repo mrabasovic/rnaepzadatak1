@@ -11,6 +11,7 @@ import Earth from '../../components/Earth/Earth';
 import ReviewStack from '../../components/ReviewStack/ReviewStack';
 import AuthCard from '../../components/AuthCard/AuthCard.tsx';
 import NewYearStack from '../../components/NewYearStack/NewYearStack.js';
+import PhotoStack from '../../components/PhotoStack/PhotoStack.js';
 
 const Home = () => {
 
@@ -73,6 +74,10 @@ const Home = () => {
       </div> */}
       <NewYearStack />
       <ReviewStack/>
+      <div className="photo-stack">
+        <PhotoStack/>
+      </div>
+      
       <Earth/>
       {/* <NewYearStack />
       <ReviewStack/>
