@@ -7,7 +7,7 @@ import background1 from '../../assets/6.jpg';
 // import background2 from '../../assets/2.jpg';
 
 // import DestinationCard from '../../components/DestinationCard/DestinationCard';
-import Earth from '../../components/Earth/Earth';
+// import Earth from '../../components/Earth/Earth';
 // import CardStack from '../../components/CardStack/CardStack';
 import ReviewStack from '../../components/ReviewStack/ReviewStack';
 // import AuthCard from '../../components/AuthCard/AuthCard.tsx';
@@ -79,7 +79,7 @@ const Home = () => {
         <PhotoStack/>
       </div>
       
-      <Earth/>
+      {/* <Earth/> */}
       {/* <NewYearStack />
       <ReviewStack/>
       <CardStack/>
