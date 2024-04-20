@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <body>
-      <img class="imgStyle" src={background1} />
+      <img class="imgStyle" src={background1} alt=""/>
       {/* <div id="card">
         <div id="card-content">
           <div id="card-title">
