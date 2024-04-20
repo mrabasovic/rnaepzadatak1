@@ -18,21 +18,24 @@ import Destinations from './screens/Destinations/Destinations.js';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <NavBar className="navBar"/>
-        <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/destination-details/:id" element={<DestinationDetails />} />
-        </Routes>
+    <div>
+      <h1>hello</h1>
+    </div>
+    // <Router>
+    //   <div>
+    //     <NavBar className="navBar"/>
+    //     <Routes>
+    //       <Route exact path="/" element={<Home/>} />
+    //       <Route path="/about" element={<About/>} />
+    //       <Route path="/contact" element={<Contact/>} />
+    //       <Route path="/login" element={<Login />} />
+    //       <Route path="/register" element={<Register />} />
+    //       <Route path="/destinations" element={<Destinations />} />
+    //       <Route path="/destination-details/:id" element={<DestinationDetails />} />
+    //     </Routes>
         
-      </div>
-    </Router>
+    //   </div>
+    // </Router>
   );
 }
 
