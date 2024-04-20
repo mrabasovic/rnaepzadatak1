@@ -29,11 +29,12 @@ jobs:
     - name: Build aplikacije
       run: npm run build
 
-    - name: Provera rezultata builda
+    - name: Provera uspesnosti builda
       run: |
-        if [ -d "dist" ]; then
-          echo "Build uspesan!"
-        else
-          echo "Build nije uspesan!"
-          exit 1
-        fi
+        if (Test-Path "dist" -PathType Container) {
+          Write-Host "Build je uspešan!"
+        } else {
+          Write-Host "Build nije uspešan!"
+        exit 1
+        }
+      
