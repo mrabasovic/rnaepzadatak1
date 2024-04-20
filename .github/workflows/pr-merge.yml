@@ -1,0 +1,39 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: CI
+
+on:
+  pull_request:
+    types: [merged, closed]
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout koda
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Instalacija dependencija
+      run: npm install
+
+    - name: Build aplikacije
+      run: npm run build
+
+    - name: Provera rezultata builda
+      run: |
+        if [ -d "dist" ]; then
+          echo "Build uspesan!"
+        else
+          echo "Build nije uspesan!"
+          exit 1
+        fi
