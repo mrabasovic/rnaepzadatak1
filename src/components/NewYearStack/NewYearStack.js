@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 import destinationsData from '../../data/destinationsData';
 import HorizontalCard from '../HorizontalCard/HorizontalCard';
 import './NewYearStack.css';
@@ -9,18 +9,18 @@ const NewYearStack = () => {
   const [visibleCards, setVisibleCards] = React.useState(3);
   const [startIndex, setStartIndex] = React.useState(0);
 
-  const showAllCards = () => {
-    setVisibleCards(destinationsData.length);
-    // Navigate to the "OurTravelers" screen using Link
-  };
+  // const showAllCards = () => {
+  //   setVisibleCards(destinationsData.length);
+  //   // Navigate to the "OurTravelers" screen using Link
+  // };
 
-  const navigateNext = () => {
-    setStartIndex(startIndex + 3);
-  };
+  // const navigateNext = () => {
+  //   setStartIndex(startIndex + 3);
+  // };
 
-  const navigatePrev = () => {
-    setStartIndex(Math.max(0, startIndex - 3));
-  };
+  // const navigatePrev = () => {
+  //   setStartIndex(Math.max(0, startIndex - 3));
+  // };
 
   return (
     <div className="newYearCard-stack-container">

@@ -15,7 +15,7 @@ const AuthCard: React.FC<CardProps> = ({ type, onSubmit }) => {
     confirmPassword: '',
   });
 
-  const [isLogin, setIsLogin] = useState(type === 'login');
+  const [isLogin/*, setIsLogin*/] = useState(type === 'login');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
