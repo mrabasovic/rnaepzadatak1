@@ -3,7 +3,7 @@ import React from 'react';
 import './Home.css';
 // import ImageStack from '../../components/ImageStack/ImageStack';
 
-import background1 from '../../assets/6.jpg';
+// import background1 from '../../assets/6.jpg';
 // import background2 from '../../assets/2.jpg';
 // import DestinationCard from '../../components/DestinationCard/DestinationCard';
 import Earth from '../../components/Earth/Earth';
@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <body>
-      <img class="imgStyle" src={background1} alt=""/>
+      {/* <img class="imgStyle" src={background1} alt=""/> */}
       {/* <div id="card">
         <div id="card-content">
           <div id="card-title">
