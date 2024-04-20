@@ -51,7 +51,7 @@ const AboutUs = () => {
           of a lifetime.
         </p>
       </section>
-      <img src={airplaneImg} />
+      <img src={airplaneImg} alt=""/>
     </div>
   );
 };
