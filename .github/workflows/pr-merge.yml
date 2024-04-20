@@ -27,14 +27,6 @@ jobs:
       run: npm install
 
     - name: Build aplikacije
-      run: npm run build
-
-    - name: Provera uspesnosti builda
-      run: |
-        if (Test-Path "dist" -PathType Container) {
-          Write-Host "Build je uspešan!"
-        } else {
-          Write-Host "Build nije uspešan!"
-        exit 1
-        }
-      
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
