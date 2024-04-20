@@ -58,7 +58,7 @@ const Earth = () => {
 
       cameraRef.current.position.z = 15 + window.scrollY / 100;
 
-      rendererRef.current.render(sceneRef.current, cameraRef.current);
+      // rendererRef.current.render(sceneRef.current, cameraRef.current); ODKOMENTARISI OVO
 
       previousTimeRef.current = time;
       requestAnimationFrame(animate);
