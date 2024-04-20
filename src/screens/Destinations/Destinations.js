@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 import destinationsData from '../../data/destinationsData';
 import HorizontalCard from '../../components/HorizontalCard/HorizontalCard';
 import './Destinations.css';

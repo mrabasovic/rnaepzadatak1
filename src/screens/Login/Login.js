@@ -1,5 +1,5 @@
 // Login.js
-import React, { useState } from 'react';
+import React /*,{ useState }*/ from 'react';
 import AuthCard from '../../components/AuthCard/AuthCard.tsx';
 import '../Login/Login.css';
 import background1 from '../../assets/5.jpg';
@@ -22,7 +22,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <img src={background1} className="background-image"/>
+      <img src={background1} className="background-image" alt=""/>
       <div className="background-image"></div>
       <AuthCard type="login" onSubmit={handleSubmit} />
     </div>

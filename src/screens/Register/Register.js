@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React/*, { useState }*/ from 'react';
 import AuthCard from '../../components/AuthCard/AuthCard.tsx';
 import '../Register/Register.css';
 import background1 from '../../assets/22.jpg';
@@ -21,7 +21,7 @@ const Register = () => {
 
   return (
     <div className="register-container">
-      <img src={background1} className="background-image"/>
+      <img src={background1} className="background-image" alt=""/>
       <div className="background-image"></div>
       <AuthCard type="register" onSubmit={handleSubmit} />
     </div>

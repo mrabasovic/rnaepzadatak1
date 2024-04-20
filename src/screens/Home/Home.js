@@ -5,33 +5,34 @@ import './Home.css';
 
 // import background1 from '../../assets/6.jpg';
 import background2 from '../../assets/2.jpg';
+
 // import DestinationCard from '../../components/DestinationCard/DestinationCard';
 import Earth from '../../components/Earth/Earth';
 // import CardStack from '../../components/CardStack/CardStack';
 import ReviewStack from '../../components/ReviewStack/ReviewStack';
-import AuthCard from '../../components/AuthCard/AuthCard.tsx';
+// import AuthCard from '../../components/AuthCard/AuthCard.tsx';
 import NewYearStack from '../../components/NewYearStack/NewYearStack.js';
 import PhotoStack from '../../components/PhotoStack/PhotoStack.js';
 
 const Home = () => {
 
-  const images1 = [background2, '2.jpg', '3.jpg'];
-  const images2 = ['4.jpg', '5.jpg', '6.jpg'];
+  // const images1 = [background2, '2.jpg', '3.jpg'];
+  // const images2 = ['4.jpg', '5.jpg', '6.jpg'];
 
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
+  // const containerStyle = {
+  //   display: 'flex',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // };
 
-  const imageStyle = {
-    maxWidth: '100%',
-    margin: '0 10px',
-  };
+  // const imageStyle = {
+  //   maxWidth: '100%',
+  //   margin: '0 10px',
+  // };
 
   return (
     <body>
-      {/* <img class="imgStyle" src={background1} /> */}
+      {/* <img class="imgStyle" src={background1} alt=""/> */}
       {/* <div id="card">
         <div id="card-content">
           <div id="card-title">
