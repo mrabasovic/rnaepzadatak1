@@ -6,8 +6,8 @@ import HorizontalCard from '../HorizontalCard/HorizontalCard';
 import './NewYearStack.css';
 
 const NewYearStack = () => {
-  const [visibleCards, setVisibleCards] = React.useState(3);
-  const [startIndex, setStartIndex] = React.useState(0);
+  const [visibleCards/*, setVisibleCards*/] = React.useState(3);
+  const [startIndex/*, setStartIndex*/] = React.useState(0);
 
   // const showAllCards = () => {
   //   setVisibleCards(destinationsData.length);
