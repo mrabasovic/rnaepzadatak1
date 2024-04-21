@@ -31,3 +31,6 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
+      
+      - name: Run ESLint on a specific file
+        run: npx eslint src/screens/Login/Login.js
