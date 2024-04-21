@@ -48,7 +48,7 @@ const AboutUs = () => {
         <h2>Contact Us</h2>
         <p>
           Ready to embark on your next adventure? Contact Odyssey Travel Agency today to begin planning the journey
-          of a lifetime.
+          of a lifetime...
         </p>
       </section>
       <img src={airplaneImg} alt=""/>
