@@ -12,7 +12,7 @@ const destinationsData = [
         id: 2,
         imageUrl: require('../assets/11.jpeg'),
         title: 'Milan New Year',
-        country: 'Italy',
+        country: 'Italyy',
         description: 'This is a short description for Card 1.',
         dates: '30.12-02.01',
         price: '200€'
