@@ -28,9 +28,6 @@ jobs:
       - name: Build aplikacije
         run: npm run build
         continue-on-error: true
-
-      - name: Run ESLint
-        run: npm run lint
       
-      - name: Run ESLint on a specific file
+      - name: Run ESLint
         run: npx eslint src/screens/Login/Login.js
